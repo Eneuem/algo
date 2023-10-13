@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculate js</title>
+</head>
+<body>
+
+<script>
+
+function calculateMax() {
+    let a = parseInt(prompt("Entrez le nombre 1 :"));
+    let b = parseInt(prompt("Entrez le nombre 2"));
+    let c = parseInt(prompt("Entrez le nombre 3"));
+
+    if (a > b && b > c ) {
+        alert(a + "est le plus grand nombre");
+    }
+    else if (b > a && b > c) {
+        alert(b + "est le plus grand nombre");
+    }
+    else if(c > a && c > b) {
+        alert(c + "est le plus grand nombre");
+    }
+
+    }
+
+    calculateMax()
+</script>
+
+</body>
+</html>

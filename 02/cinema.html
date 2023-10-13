@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculate js</title>
+</head>
+<body>
+
+<script>
+
+function calculateCinemaPrice(canHaveReducedTariff) {
+    let fullPrice = 10;
+    let reducedPrice = 8;
+
+    if (canHaveReducedTariff) {
+        alert("Prix à payer: " + reducedPrice + "€");
+    } else {
+        alert("Prix à payer: " + fullPrice + "€");
+    }
+}
+
+calculateCinemaPrice(true); 
+calculateCinemaPrice(false); 
+
+</script>
+
+</body>
+</html>

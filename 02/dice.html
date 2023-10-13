@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculate js</title>
+</head>
+<body>
+
+<script>
+    function dice(max)
+    {
+        return Math.floor(Math.random() * max);
+    }
+
+    let x = dice(5);
+    let y = dice(5);
+    let z = dice(5);
+
+    alert(x);
+    alert(y);
+    alert(z);
+
+    if (x === y && x === z) 
+    {
+        alert("Three");
+    }
+    else if ( x === y || x === z || y === z)
+    {
+        alert("Two");
+    }
+    else 
+    {
+        alert("None");
+    }
+</script>
+
+</body>
+</html>
