@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculate js</title>
+</head>
+<body>
+
+<script>
+   let Week = ["Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi", "Dimanche"];
+
+   let Number = parseInt(prompt("Entrez un nombre"));
+
+   function calculer() 
+   {
+   if (Number > 7) 
+   {
+    return ("Nombre incorrect");
+   }
+   else if (Number == 7)
+   {
+    return ("Dimanche")
+   }
+   else if (Number == 6)
+   {
+    return ("Samedi")
+   }
+   else if (Number == 5)
+   {
+    return ("Vendredi")
+   }
+   else if (Number == 4)
+   {
+    return ("Jeudi")
+   }
+   else if (Number == 3)
+   {
+    return ("Mercredi")
+   }
+   else if (Number == 2)
+   {
+    return ("Mardi")
+   }
+   else if (Number == 1)
+   {
+    return ("Lundi")
+   }
+    }
+
+    alert(calculer());
+</script>
+
+</body>
+</html>

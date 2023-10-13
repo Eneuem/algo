@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculate js</title>
+</head>
+<body>
+
+<script>
+    let number = parseFloat(prompt("Entrez le nombre de copie:"));
+
+function calculatePrice(copies) {
+    let result;
+
+    if (copies <= 10) {
+        result = copies * 0.12;
+    } else if (copies <= 30) {
+        result = 10 * 0.12 + (copies - 10) * 0.11;
+    } else {
+        result = 10 * 0.12 + 20 * 0.11 + (copies - 30) * 0.10;
+    }
+
+    return result.toFixed(2) + "€";
+}
+
+alert(calculatePrice(number));
+
+</script>
+
+</body>
+</html>
