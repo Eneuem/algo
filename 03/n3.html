@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculate js</title>
+</head>
+<body>
+
+<script>
+
+function printNumbers(n)
+{
+    let output = "";
+    let i = 1;
+    while (i <= n)
+    {
+        if (i % 2 !== 0)
+        {
+            output += i + " ";
+            console.log(i); 
+        }
+        i++;
+    }
+    return output.trim();
+}
+
+alert(printNumbers(15));
+
+
+</script>
+</body>
+</html>
