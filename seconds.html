@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculate js</title>
+</head>
+<body>
+
+<script>
+
+function secondsincemidnight() 
+{
+    let hour = parseInt(prompt("Entrez l'heure UNIQUEMENT: ")); 
+    let minute = parseInt(prompt("Entrez les minutes UNIQUEMENT: "));
+    let second = parseInt(prompt("Entrez les secondes UNIQUEMENT: "));
+    return (hour * 3600 + minute * 60 + second);
+}
+
+
+let result = secondsincemidnight();
+alert(result);
+</script>
+
+</body>
+</html>
