@@ -8,14 +8,14 @@
 <body>
 
 <script>
-    function dice(max)
+    function dice()
     {
-        return Math.floor(Math.random() * max);
+        return Math.floor(Math.random() * 6) + 1;
     }
 
-    let x = dice(5);
-    let y = dice(5);
-    let z = dice(5);
+    let x = dice();
+    let y = dice();
+    let z = dice();
 
     alert(x);
     alert(y);

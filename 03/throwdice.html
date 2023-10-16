@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice Roll</title>
+</head>
+<body>
+
+<script>
+    function diceRoll() {
+        return Math.floor(Math.random() * 6) + 1; 
+    }
+
+    function countRolls(targetNumber, rolls) {
+        let count = 0;
+        for (let i = 0; i < rolls; i++) {
+            if (diceRoll() === targetNumber) {
+                count++;
+            }
+        }
+        return count;
+    }
+
+    const target = parseInt(prompt("Quel nombre voulez-vous cibler (entre 1 et 6)?"));
+    const numberOfRolls = parseInt(prompt("Combien de fois voulez-vous lancer le dé?"));
+
+    const result = countRolls(target, numberOfRolls);
+
+    alert("Le nombre " + target + " est apparu " + result + " fois sur " + numberOfRolls + " lancers.");
+
+</script>
+
+</body>
+</html>
