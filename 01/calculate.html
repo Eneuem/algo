@@ -9,13 +9,13 @@
 
 <script>
 
-function calculator() {
-    let x = parseFloat(prompt("Entrez une valeur pour x:"));
-    let y = parseFloat(prompt("Entrez une valeur pour y:"));
-    let a = x + y;
-    let b = x * y;
-    let c = x % y;
-    alert("La somme de x et y est: " + a);
+function calculator() {     //init fonction
+    let x = parseFloat(prompt("Entrez une valeur pour x:")); //demander la valeur de x a user
+    let y = parseFloat(prompt("Entrez une valeur pour y:")); //demander la valeur de y a user
+    let a = x + y; // calculer la somme des deux entrées 
+    let b = x * y; // calculer la multiplication
+    let c = x % y; // calculer le modulo ( reste )
+    alert("La somme de x et y est: " + a); // afficher sous forme de pop up, fonctionne aussi avec console.log mais necessaire d ouvrir la console . 
     alert("La multiplication de x et y est: " + b);
     alert("Le modulo de x et y est: " +c);
 }
