@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculate js</title>
+</head>
+<body>
+
+<script>
+
+function printMinArrayElement(elements) {
+    if (elements.length === 0) {
+        console.log("Le tableau est vide");
+    } else {
+        let maxElement = elements[0]; 
+
+        for (let i = 1; i < elements.length; i++) { 
+            if (elements[i] < minElement) {
+                minElement = elements[i]; 
+        }
+
+        console.log(minElement); 
+    }
+}
+
+var someArray = [1, 2, 3, 4, 5];
+
+printMinArrayElement(someArray); 
+
+}
+
+</script>
+</body>
+</html>
+
+

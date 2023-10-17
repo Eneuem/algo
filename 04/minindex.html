@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculate js</title>
+</head>
+<body>
+
+<script>
+
+function printMinArrayElementIndex(elements) {
+    if (elements.length === 0) {
+        console.log("Le tableau est vide");
+    } else {
+        let minIndex = 0;
+
+        for (let i = 1; i < elements.length; i++) { 
+            if (elements[i] < elements[minIndex]) {
+                minIndex = i; 
+            }
+        }
+
+        console.log(minIndex); 
+    }
+}
+
+var someArray = [1, 2, 3, 4, 5];
+printMinArrayElementIndex(someArray); 
+
+
+</script>
+</body>
+</html>
+
